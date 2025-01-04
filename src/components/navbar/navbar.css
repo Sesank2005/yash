@@ -39,42 +39,62 @@
 .nav-mob-open{
     display: none;
 }
-@media(max-width:750px){
-    .navbar{
-        margin: 10px 30px;
+
+
+/* General styles for mobile */
+@media (max-width: 768px) {
+    .navbar {
+        margin: 10px 20px; /* Reduce margin */
     }
-    .nav-connect{
-        display: none;
-    }
-    .nav-mob-open{
-        display: block;
-        position:fixed;
-        right: 30px;
-    }
-    .nav-mob-close{
-        display: block;
-        position: relative;
-        top: 30px;
-        left: 290px;
-        width: 30px;
-    }
-    .nav-menu{
-        position:fixed;
-        flex-direction: column;
-        align-items: start;
-        top:0;
-        gap:30px;
-        background-color: #1f0016;
-        width: 100px;
+
+    .nav-menu {
+        position: fixed; /* Make it overlay */
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+        top: 0;
+        right: -100%;
         height: 100%;
-        z-index: 2;
-        transition: 0.5s;
-        right: -350px;
+        width: 70%; /* Take a portion of the screen width */
+        background-color: #1f0016; /* Background for mobile menu */
+        gap: 30px;
+        padding: 20px;
+        transition: 0.5s ease-in-out;
+        z-index: 1000; /* Ensure it appears above other elements */
     }
-    .nav-menu li{
-        font-size: 20px;
-        padding-left: 60px;
-        flex-direction: row;
-        gap: 20px;
+
+    .nav-menu.active {
+        right: 0; /* Slide in the menu when active */
+    }
+
+    .nav-menu li {
+        font-size: 20px; /* Increase font size */
+        padding: 10px 0; /* Add spacing */
+        flex-direction: row; /* Align icon and text horizontally */
+        gap: 15px;
+    }
+
+    .nav-connect {
+        display: none; /* Hide the connect button for mobile */
+    }
+
+    .nav-mob-open {
+        display: block; /* Show hamburger icon */
+        font-size: 30px; /* Adjust size */
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1001; /* Ensure it stays above menu */
+        color: white;
+    }
+
+    .nav-mob-close {
+        display: block; /* Show close icon */
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
     }
 }

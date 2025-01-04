@@ -101,3 +101,61 @@ button:hover{
     transition: 0.4s;
 
 }
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .contact {
+        margin: 40px 20px; /* Reduce margin for smaller screens */
+        gap: 20px; /* Adjust gap */
+    }
+
+    .contact-title h1 {
+        font-size: 35px; /* Reduce heading size */
+        padding: 0 15px; /* Adjust padding */
+    }
+
+    .contact-section {
+        flex-direction: column; /* Stack sections vertically */
+        gap: 20px; /* Reduce gap between sections */
+    }
+
+    .contact-left h1 {
+        font-size: 35px; /* Smaller font size for heading */
+    }
+
+    .contact-left p {
+        font-size: 14px; /* Adjust paragraph font size */
+        line-height: 22px; /* Tighter line spacing */
+    }
+
+    .contact-details {
+        font-size: 18px; /* Adjust font size */
+        gap: 20px; /* Reduce gap between details */
+    }
+
+    .contact-detail {
+        gap: 15px; /* Narrow gap between detail items */
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+        width: 100%; /* Use full width for inputs */
+        max-width: none; /* Remove width restriction */
+        font-size: 14px; /* Slightly smaller font size */
+    }
+
+    .contact-right textarea {
+        padding: 15px; /* Adjust padding for textarea */
+    }
+
+    button {
+        width: 100%; /* Full-width button for mobile */
+        max-width: 200px; /* Optional: Limit max width */
+        height: 45px; /* Adjust height */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    button:hover {
+        transform: scale(1.03); /* Slightly reduced hover effect */
+    }
+}

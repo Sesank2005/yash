@@ -59,3 +59,55 @@
 .hero-resume:hover{
     border-color: #b415ff;
 }
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .hero {
+        gap: 20px; /* Reduce the gap between elements */
+    }
+
+    .hero img {
+        margin-top: 30px; /* Reduce top margin */
+        border-radius: 25px; /* Adjust border radius for smaller images */
+        width: 120px; /* Set a fixed width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .hero h1 {
+        width: 90%; /* Increase width for smaller screens */
+        font-size: 35px; /* Reduce font size */
+    }
+
+    .hero h1 span {
+        background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+        width: 80%; /* Increase paragraph width for better readability */
+        font-size: 16px; /* Smaller font size */
+        line-height: 22px; /* Adjust line height */
+    }
+
+    .hero-action {
+        flex-direction: column; /* Stack action buttons vertically */
+        gap: 15px; /* Reduce the gap between buttons */
+        margin-bottom: 20px; /* Adjust bottom margin */
+    }
+
+    .hero-connect, 
+    .hero-resume {
+        padding: 8px 20px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+        width: 100%; /* Make buttons full-width */
+        max-width: 200px; /* Limit max width for better appearance */
+        text-align: center; /* Center align text */
+    }
+
+    .hero-connect:hover, 
+    .hero-resume:hover {
+        transform: scale(1.03); /* Slightly reduced hover scale for touch devices */
+    }
+}

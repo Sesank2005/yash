@@ -51,3 +51,35 @@
     transition: 0.6s;
     
 }
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .mywork {
+        margin: 40px 20px; /* Reduce margin for smaller screens */
+        gap: 30px; /* Adjust gap */
+    }
+
+    .mywork-title h1 {
+        font-size: 35px; /* Reduce font size for headings */
+        padding: 0 15px; /* Adjust padding */
+    }
+
+    .mywork-container {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        gap: 20px; /* Reduce gap between grid items */
+    }
+
+    .mywork-container img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 8px; /* Keep smaller border-radius for a cleaner look */
+    }
+
+    .mywork-showmore {
+        font-size: 16px; /* Reduce font size */
+        padding: 8px 12px; /* Adjust padding */
+        width: 100%; /* Full-width button for better usability */
+        max-width: 200px; /* Optional: Limit max width */
+        justify-content: center; /* Center align text in the button */
+    }
+}

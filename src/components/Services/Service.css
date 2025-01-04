@@ -58,3 +58,46 @@
     transform: scale(1.05);
     transition: 0.4s;
 }
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .services {
+        margin: 40px 20px; /* Reduce margin for smaller screens */
+        gap: 20px; /* Adjust gap */
+    }
+
+    .services-title h1 {
+        font-size: 35px; /* Reduce font size */
+        padding: 0 15px; /* Adjust padding */
+        text-align: center; /* Center the heading */
+    }
+
+    .service-container {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+        gap: 15px; /* Reduce gap between items */
+    }
+
+    .service-format {
+        padding: 20px; /* Adjust padding */
+        gap: 10px; /* Reduce gap between elements */
+        border-radius: 8px; /* Slightly smaller border-radius */
+    }
+
+    .service-format h3 {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .service-format h2 {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .service-format p {
+        font-size: 16px; /* Reduce font size */
+        max-width: 100%; /* Allow full width */
+    }
+
+    .services-readmore {
+        gap: 15px; /* Adjust gap */
+        font-size: 14px; /* Smaller font for read more */
+    }
+}
