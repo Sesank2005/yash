@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/yash/static/css/main.f855e6bc.css",
+    "main.js": "/yash/static/js/main.4bb57ea0.js",
+    "static/js/488.497c7163.chunk.js": "/yash/static/js/488.497c7163.chunk.js",
+    "index.html": "/yash/index.html",
+    "main.f855e6bc.css.map": "/yash/static/css/main.f855e6bc.css.map",
+    "main.4bb57ea0.js.map": "/yash/static/js/main.4bb57ea0.js.map",
+    "488.497c7163.chunk.js.map": "/yash/static/js/488.497c7163.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.4bb57ea0.js"
+  ]
+}
