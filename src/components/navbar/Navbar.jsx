@@ -6,20 +6,23 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Navbar() {
   const[menu,setmenu]=useState("home")
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuref=useRef();
 
   const openmenu=()=>{
-    menuref.current.style.right="250px";
+    menuref.current.style.right="-7px";
+    setIsMenuOpen(true);
+
   
   }
   const closemenu=()=>{
-    menuref.current.style.right="-100px";
-  
+    menuref.current.style.right="-500px";
+    setIsMenuOpen(false);
   }
   return (
     <div className='navbar'>
        <img src={logo1} alt=''/>
-       <FaBars size={30} onClick={openmenu} className='nav-mob-open'/>
+       {!isMenuOpen &&<FaBars size={30} onClick={openmenu} className='nav-mob-open'/>}
         <ul ref={menuref}className="nav-menu">
         <FaTimes size={30} onClick={closemenu} className='nav-mob-close'/>
            <li><AnchorLink className='anchor-link'  href='#home'><p onClick={()=>setmenu("home")}>Home</p></AnchorLink>{menu==="home"?<hr/>:<></>}</li>
