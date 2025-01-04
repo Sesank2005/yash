@@ -4,7 +4,7 @@ import logo1 from '../../assets/logo1.jpg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-export default function navbar() {
+export default function Navbar() {
   const[menu,setmenu]=useState("home")
   const menuref=useRef();
 
