@@ -1,18 +1,20 @@
 {
   "files": {
     "main.css": "/yash/static/css/main.20533f34.css",
-    "main.js": "/yash/static/js/main.1653bf6f.js",
+    "main.js": "/yash/static/js/main.653d848e.js",
     "static/js/488.497c7163.chunk.js": "/yash/static/js/488.497c7163.chunk.js",
+    "static/media/work-4.png": "/yash/static/media/work-4.b99ec5a334862fac3314.png",
+    "static/media/work-5.png": "/yash/static/media/work-5.7cb99926132926e2772a.png",
     "static/media/work-2.png": "/yash/static/media/work-2.21200675e0fe86766ff5.png",
     "static/media/work-1.png": "/yash/static/media/work-1.63e2cb2b4e69917fc7e1.png",
     "static/media/work-3.png": "/yash/static/media/work-3.91efdeca3e7cd8d8e7a5.png",
     "index.html": "/yash/index.html",
     "main.20533f34.css.map": "/yash/static/css/main.20533f34.css.map",
-    "main.1653bf6f.js.map": "/yash/static/js/main.1653bf6f.js.map",
+    "main.653d848e.js.map": "/yash/static/js/main.653d848e.js.map",
     "488.497c7163.chunk.js.map": "/yash/static/js/488.497c7163.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.20533f34.css",
-    "static/js/main.1653bf6f.js"
+    "static/js/main.653d848e.js"
   ]
 }
